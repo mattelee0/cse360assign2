@@ -19,6 +19,8 @@ public class SimpleList {
 	private int count; 
 	private int[] list; 
 	
+	public int temp = 0; 	// TEMPORARY VARIABLE TO TEST GITHUB
+	
 	/** 
 	    * Class constructor.<!-- --> Initialize count to 0 and list to a size 10 array. 
 	    */
