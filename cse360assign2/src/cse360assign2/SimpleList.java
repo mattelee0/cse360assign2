@@ -1,7 +1,7 @@
 /**
  * Author 			: Matthew Lee
  * Class ID 		: 387
- * Assignment # 	: 1
+ * Assignment # 	: 2
  * Description 		: This file contains the class SimpleList.<!-- --> Further details of the SimpleList class 
  * 				  	can be found below.<!-- --> The main idea of this class is to add, remove, and manipulate
  *   			  	an array of size 10.	
@@ -47,7 +47,6 @@ public class SimpleList {
 	public void add(int addToFront) {
 		
 		int size = list.length; 
-		
 		if(list[size-1] != 0) {
 			int newSize = (int) Math.floor(1.5 * size); 
 			int[] newList = new int[newSize]; 
@@ -57,7 +56,7 @@ public class SimpleList {
 			list = newList; 
 		}
 		
-		int newSize = list.length - 1;
+		int newSize = list.length-1;
 		for(int index = newSize; index > 0; index--) {
 			if(list[index-1] != 0) {
 				list[index] = list[index-1]; 	

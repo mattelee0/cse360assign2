@@ -41,7 +41,11 @@ class SimpleListTest {
 		test.add(8);
 		test.add(9);
 		test.add(10);
+		int size = test.size(); 
+		assertEquals(10, size); 
 		test.add(11);
+		size = test.size(); 
+		assertEquals(15, size); 
 		int[] arrayTest = test.getList(); 
 		assertEquals(2, arrayTest[10]);
 		
