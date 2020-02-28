@@ -5,7 +5,7 @@
  * Description 		: This file contains the class SimpleList.<!-- --> Further details of the SimpleList class 
  * 				  	can be found below.<!-- --> The main idea of this class is to add, remove, and manipulate
  *   			  	an array of size 10.	
- * Github Link  	:  
+ * Github Link  	: https://github.com/mattelee0/cse360assign2
  */
 
 package cse360assign2;
