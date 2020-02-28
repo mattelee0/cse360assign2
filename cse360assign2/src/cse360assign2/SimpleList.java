@@ -19,8 +19,6 @@ public class SimpleList {
 	private int count; 
 	private int[] list; 
 	
-	public int temp = 0; 	// TEMPORARY VARIABLE TO TEST GITHUB
-	
 	/** 
 	    * Class constructor.<!-- --> Initialize count to 0 and list to a size 10 array. 
 	    */
@@ -45,6 +43,18 @@ public class SimpleList {
 	    * Parameter for this method is the integer that will be added to the front. 
 	    */
 	public void add(int addToFront) {
+		
+		int size = list.length; 
+		
+		if(list[size-1] != 0) {
+			int newSize = (int) Math.floor(1.5 * size); 
+			int[] newList = new int[newSize]; 
+			for(int index = 0; index < newSize; index++) {
+				newList[index] = list[index]; 
+			}
+			list = newList; 
+		}
+		
 		for(int index = 9; index > 0; index--) {
 			if(list[index-1] != 0) {
 				list[index] = list[index-1]; 	
@@ -71,6 +81,19 @@ public class SimpleList {
 				count--; 
 			}
 		}
+		
+		int size = list.length; 
+		int quarter = (int) Math.floor(list.length / 4); 
+		
+		if(list[size-quarter-1] == 0 && size != 1) {
+			int[] tempList = new int[size-quarter]; 
+			for(int index = 0; index < size-quarter; index++) {
+				tempList[index] = list[index]; 
+			}
+			list = tempList; 
+		}
+		
+		
 	}
 	
 	
